@@ -182,3 +182,22 @@ style.textContent = `
 document.head.appendChild(style);
 
 console.log('%c🚀 GridSetup – Loaded!', 'color:#3b82f6;font-size:16px;font-weight:bold;');
+// ── FAQ ACCORDION ─────────────────────────────────
+function toggleFaq(id) {
+  const item = document.getElementById(id);
+  if (!item) return;
+
+  const isOpen = item.classList.contains('open');
+
+  // Close all other open items
+  document.querySelectorAll('.faq-item.open').forEach(el => {
+    if (el !== item) {
+      el.classList.remove('open');
+      el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // Toggle current item
+  item.classList.toggle('open', !isOpen);
+  item.querySelector('.faq-question').setAttribute('aria-expanded', String(!isOpen));
+}
