@@ -1,0 +1,13 @@
+# Visual Studio / IDE
+.vs/
+*.user
+
+# ASP.NET Core project (không cần deploy)
+GridSetup/bin/
+GridSetup/obj/
+GridSetup.sln
+GridSetup/
+
+# OS
+Thumbs.db
+.DS_Store

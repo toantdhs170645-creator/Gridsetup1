@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="GridSetup – Cửa hàng dụng cụ và phụ kiện máy tính chất lượng cao. Giá treo tai nghe, kẹp bàn, phụ kiện setup góc máy minimalist." />
+  <meta property="og:title" content="GridSetup – Phụ Kiện Máy Tính Minimalist" />
+  <meta property="og:description" content="Nâng tầm góc máy của bạn với những phụ kiện chất lượng từ GridSetup." />
+  <title>GridSetup – Phụ Kiện Máy Tính Minimalist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <img src="img/Logo.jpg" alt="GridSetup Logo" class="logo-img" />
+        <span class="logo-text">Grid<span class="logo-accent">Setup</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#hero">Trang Chủ</a></li>
+        <li><a href="#products">Sản Phẩm</a></li>
+        <li><a href="#benefits">Lợi Ích</a></li>
+        <li><a href="#reviews">Đánh Giá</a></li>
+        <li><a href="#contact">Liên Hệ</a></li>
+      </ul>
+      <a href="https://www.lazada.vn/grid-setup/?q=All-Products&from=wangpu&langFlag=vi&pageTypeId=2" target="_blank"
+        rel="noopener" class="btn btn-nav" id="nav-shop-btn">
+        🛒 Mua Tại Lazada
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#hero">Trang Chủ</a>
+      <a href="#products">Sản Phẩm</a>
+      <a href="#benefits">Lợi Ích</a>
+      <a href="#reviews">Đánh Giá</a>
+      <a href="#contact">Liên Hệ</a>
+      <a href="https://www.lazada.vn/grid-setup/?q=All-Products&from=wangpu&langFlag=vi&pageTypeId=2" target="_blank"
+        rel="noopener" class="btn btn-primary mt-1">🛒 Mua Tại Lazada</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-particles" id="hero-particles"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">✦ Phụ Kiện Máy Tính Cao Cấp</div>
+        <h1 class="hero-title">
+          Nâng Tầm<br />
+          <span class="gradient-text">Góc Máy</span><br />
+          Của Bạn
+        </h1>
+        <p class="hero-desc">
+          GridSetup mang đến những phụ kiện máy tính chất lượng cao với thiết kế minimalist tinh tế –
+          giải phóng mặt bàn, tối ưu trải nghiệm làm việc và gaming.
+        </p>
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-primary btn-lg">
+            Xem Sản Phẩm <span class="btn-arrow">→</span>
+          </a>
+          <a href="https://www.lazada.vn/grid-setup/?q=All-Products&from=wangpu&langFlag=vi&pageTypeId=2"
+            target="_blank" rel="noopener" class="btn btn-outline btn-lg" id="hero-lazada-btn">
+            🛒 Cửa Hàng Lazada
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">500+</span>
+            <span class="stat-label">Khách Hàng</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">4.9★</span>
+            <span class="stat-label">Đánh Giá</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Hài Lòng</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-glow"></div>
+        <div class="hero-logo-wrap">
+          <img src="img/Logo.jpg" alt="GridSetup" class="hero-logo-img" />
+        </div>
+        <div class="floating-badge badge-1">🎧 Giá Tai Nghe</div>
+        <div class="floating-badge badge-2">⚡ Giao Nhanh</div>
+        <div class="floating-badge badge-3">✓ Chính Hãng</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FLASH SALE BANNER
+  ═══════════════════════════════════════════ -->
+  <div class="flash-banner">
+    <div class="flash-inner">
+      <span class="flash-icon">⚡</span>
+      <span>FLASH SALE – Giảm tới 40% cho đơn đầu tiên!</span>
+      <a href="https://www.lazada.vn/grid-setup/?q=All-Products&from=wangpu&langFlag=vi&pageTypeId=2" target="_blank"
+        rel="noopener" class="flash-cta" id="flash-cta-btn">Mua Ngay →</a>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       PRODUCTS SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="section products-section" id="products">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-badge">🛍 Sản Phẩm Nổi Bật</div>
+        <h2 class="section-title">Bộ Sưu Tập <span class="gradient-text">GridSetup</span></h2>
+        <p class="section-desc">Mỗi sản phẩm được chọn lọc kỹ càng – thiết kế tinh tế, chất lượng vượt trội.</p>
+      </div>
+
+      <div class="products-grid" id="products-grid">
+
+        <!-- PRODUCT CARD 1 -->
+        <article class="product-card" id="product-headphone-holder">
+          <div class="product-images">
+            <div class="product-main-img-wrap">
+              <img src="img/Anh-chinh.png" alt="Giá Treo Tai Nghe Kẹp Bàn Minimalist" class="product-main-img"
+                id="main-img-1" />
+              <div class="product-badge-new">Mới</div>
+            </div>
+            <div class="product-thumbs">
+              <button class="thumb active" onclick="switchImg(1, 'img/Anh-chinh.png', this)" id="thumb-1-0">
+                <img src="img/Anh-chinh.png" alt="Ảnh chính" />
+              </button>
+              <button class="thumb" onclick="switchImg(1, 'img/Anh-phu-1.png', this)" id="thumb-1-1">
+                <img src="img/Anh-phu-1.png" alt="Ảnh phụ 1" />
+              </button>
+              <button class="thumb" onclick="switchImg(1, 'img/Anh-phu-2.png', this)" id="thumb-1-2">
+                <img src="img/Anh-phu-2.png" alt="Ảnh phụ 2" />
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Phụ Kiện Bàn Làm Việc</div>
+            <h3 class="product-name">Giá Treo Tai Nghe Kẹp Bàn Minimalist</h3>
+            <p class="product-desc">
+              Giá Treo Tai Nghe Kẹp Bàn Minimalist GRID SETUP – Giải Phóng Mặt Bàn, Nâng Tầm Góc Máy.
+              Thiết kế tối giản, chắc chắn, phù hợp mọi loại tai nghe.
+            </p>
+            <ul class="product-features">
+              <li>✓ Kẹp chắc chắn, không trầy xước bàn</li>
+              <li>✓ Hợp kim thép chống rỉ</li>
+              <li>✓ Lắp đặt trong 30 giây</li>
+              <li>✓ Chịu tải tới 2kg</li>
+            </ul>
+            <div class="product-price-row">
+              <span class="product-price">30.000₫</span>
+              <span class="product-old-price">55.000₫</span>
+              <span class="product-discount">-45%</span>
+            </div>
+            <a href="https://www.lazada.vn/products/pdp-i13395979100-s117046420861.html?c=&channelLpJumpArgs=&clickTrackInfo=query%253A%253Bnid%253A13395979100%253Bsrc%253AlazadaInShopSrp%253Brn%253A5159dc7ff4cba32f9566027a49025784%253Bregion%253Avn%253Bsku%253A13395979100_VNAMZ%253Bprice%253A30000%253Bclient%253Adesktop%253Bsupplier_id%253A201148848031%253Bbiz_source%253Ah5_internal%253Bslot%253A0%253Butlog_bucket_id%253A470687%253Basc_category_id%253A10100396%253Bitem_id%253A13395979100%253Bsku_id%253A117046420861%253Bshop_id%253A5102792%253BtemplateInfo%253A107883_E%2523-1_A3_C%2523&freeshipping=1&fs_ab=2&fuse_fs=&lang=vi&location=Viet%20Nam&price=3E%204&priceCompare=skuId%3A117046420861%3Bsource%3Alazada-search-voucher-in-shop%3Bsn%3A5159dc7ff4cba32f9566027a49025784%3BoriginPrice%3A30000%3BdisplayPrice%3A30000%3BsinglePromotionId%3A-1%3BsingleToolCode%3A-1%3BvoucherPricePlugin%3A0%3Btimestamp%3A1781874456665&ratingscore=&request_id=5159dc7ff4cba32f9566027a49025784&review=&sale=0&search=1&spm=a2o4n.store_product.list.0&stock=1"
+              target="_blank" rel="noopener" class="btn btn-primary btn-block" id="buy-product-1">
+              🛒 Mua Ngay Trên Lazada
+            </a>
+          </div>
+        </article>
+
+        <!-- PRODUCT CARD 2 — Placeholder, bạn tự điền -->
+        <article class="product-card" id="product-2">
+          <div class="product-images">
+            <div class="product-main-img-wrap">
+              <img src="img/Anh-chinh.png" alt="Sản phẩm 2" class="product-main-img" id="main-img-2" />
+            </div>
+            <div class="product-thumbs">
+              <button class="thumb active" onclick="switchImg(2, 'img/Anh-chinh.png', this)" id="thumb-2-0">
+                <img src="img/Anh-chinh.png" alt="Ảnh chính" />
+              </button>
+              <button class="thumb" onclick="switchImg(2, 'img/Anh-phu-1.png', this)" id="thumb-2-1">
+                <img src="img/Anh-phu-1.png" alt="Ảnh phụ 1" />
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Phụ Kiện Bàn Làm Việc</div>
+            <h3 class="product-name">Tên Sản Phẩm 2</h3>
+            <p class="product-desc">Mô tả ngắn về sản phẩm 2. Bạn có thể thay đổi thông tin này.</p>
+            <ul class="product-features">
+              <li>✓ Tính năng 1</li>
+              <li>✓ Tính năng 2</li>
+              <li>✓ Tính năng 3</li>
+            </ul>
+            <div class="product-price-row">
+              <span class="product-price">XX.000₫</span>
+            </div>
+            <a href="https://www.lazada.vn/grid-setup/" target="_blank" rel="noopener" class="btn btn-primary btn-block"
+              id="buy-product-2">
+              🛒 Mua Ngay Trên Lazada
+            </a>
+          </div>
+        </article>
+
+        <!-- PRODUCT CARD 3 — Placeholder -->
+        <article class="product-card" id="product-3">
+          <div class="product-images">
+            <div class="product-main-img-wrap">
+              <img src="img/Anh-chinh.png" alt="Sản phẩm 3" class="product-main-img" id="main-img-3" />
+            </div>
+            <div class="product-thumbs">
+              <button class="thumb active" onclick="switchImg(3, 'img/Anh-chinh.png', this)" id="thumb-3-0">
+                <img src="img/Anh-chinh.png" alt="Ảnh chính" />
+              </button>
+              <button class="thumb" onclick="switchImg(3, 'img/Anh-phu-1.png', this)" id="thumb-3-1">
+                <img src="img/Anh-phu-1.png" alt="Ảnh phụ 1" />
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Phụ Kiện Gaming</div>
+            <h3 class="product-name">Tên Sản Phẩm 3</h3>
+            <p class="product-desc">Mô tả ngắn về sản phẩm 3. Bạn có thể thay đổi thông tin này.</p>
+            <ul class="product-features">
+              <li>✓ Tính năng 1</li>
+              <li>✓ Tính năng 2</li>
+              <li>✓ Tính năng 3</li>
+            </ul>
+            <div class="product-price-row">
+              <span class="product-price">XX.000₫</span>
+            </div>
+            <a href="https://www.lazada.vn/grid-setup/" target="_blank" rel="noopener" class="btn btn-primary btn-block"
+              id="buy-product-3">
+              🛒 Mua Ngay Trên Lazada
+            </a>
+          </div>
+        </article>
+
+      </div><!-- /products-grid -->
+
+      <!-- CTA sau products -->
+      <div class="products-cta">
+        <p>Xem thêm hàng trăm sản phẩm tại cửa hàng của chúng tôi</p>
+        <a href="https://www.lazada.vn/grid-setup/?q=All-Products&from=wangpu&langFlag=vi&pageTypeId=2" target="_blank"
+          rel="noopener" class="btn btn-primary btn-lg" id="products-all-btn">
+          Xem Tất Cả Sản Phẩm →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       MID-PAGE BUY NOW BANNER
+  ═══════════════════════════════════════════ -->
+  <div class="mid-cta-banner">
+    <div class="mid-cta-inner">
+      <div class="mid-cta-text">
+        <h3>🔥 Đừng bỏ lỡ ưu đãi hôm nay!</h3>
+        <p>Miễn phí vận chuyển cho đơn hàng đầu tiên – Số lượng có hạn!</p>
+      </div>
+      <a href="https://www.lazada.vn/grid-setup/?q=All-Products&from=wangpu&langFlag=vi&pageTypeId=2" target="_blank"
+        rel="noopener" class="btn btn-white btn-lg" id="mid-cta-btn">
+        🛒 Mua Ngay Trên Lazada
+      </a>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       BENEFITS SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="section benefits-section" id="benefits">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-badge">💎 Vì Sao Chọn Chúng Tôi</div>
+        <h2 class="section-title">Lợi Ích <span class="gradient-text">Nổi Bật</span></h2>
+        <p class="section-desc">Chúng tôi không chỉ bán sản phẩm – chúng tôi nâng cấp toàn bộ trải nghiệm làm việc của
+          bạn.</p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card" id="benefit-quality">
+          <div class="benefit-icon">🏆</div>
+          <h3>Chất Lượng Vượt Trội</h3>
+          <p>Mỗi sản phẩm được kiểm tra nghiêm ngặt trước khi đến tay bạn. Vật liệu cao cấp, bền theo thời gian.</p>
+        </div>
+        <div class="benefit-card" id="benefit-design">
+          <div class="benefit-icon">✨</div>
+          <h3>Thiết Kế Minimalist</h3>
+          <p>Phong cách tối giản, tinh tế – phù hợp mọi không gian làm việc từ home office đến gaming setup chuyên
+            nghiệp.</p>
+        </div>
+        <div class="benefit-card" id="benefit-price">
+          <div class="benefit-icon">💰</div>
+          <h3>Giá Cực Hợp Lý</h3>
+          <p>Chất lượng premium nhưng giá cả thực tế. Không phải trả thêm cho những thứ không cần thiết.</p>
+        </div>
+        <div class="benefit-card" id="benefit-ship">
+          <div class="benefit-icon">🚀</div>
+          <h3>Giao Hàng Nhanh</h3>
+          <p>Đối tác với Lazada – giao hàng toàn quốc trong 1-3 ngày, miễn phí vận chuyển cho đơn đủ điều kiện.</p>
+        </div>
+        <div class="benefit-card" id="benefit-support">
+          <div class="benefit-icon">🛡️</div>
+          <h3>Bảo Hành & Hỗ Trợ</h3>
+          <p>Bảo hành đổi trả dễ dàng. Đội ngũ hỗ trợ luôn sẵn sàng giải đáp mọi thắc mắc của bạn 7 ngày/tuần.</p>
+        </div>
+        <div class="benefit-card" id="benefit-authentic">
+          <div class="benefit-icon">✅</div>
+          <h3>100% Chính Hãng</h3>
+          <p>Tất cả sản phẩm là hàng chính hãng GridSetup, có tem nhãn rõ ràng và chứng nhận chất lượng đầy đủ.</p>
+        </div>
+      </div>
+
+      <div class="benefits-cta">
+        <a href="https://www.lazada.vn/grid-setup/?q=All-Products&from=wangpu&langFlag=vi&pageTypeId=2" target="_blank"
+          rel="noopener" class="btn btn-primary btn-lg" id="benefits-lazada-btn">
+          🛒 Mua Ngay – Trải Nghiệm Ngay Hôm Nay
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       REVIEWS SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="section reviews-section" id="reviews">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-badge">💬 Phản Hồi Thực Tế</div>
+        <h2 class="section-title">Khách Hàng Nói Gì Về <span class="gradient-text">GridSetup</span></h2>
+        <p class="section-desc">Hàng trăm khách hàng đã tin tưởng và hài lòng. Đây là những gì họ chia sẻ.</p>
+      </div>
+
+      <div class="reviews-grid">
+
+        <div class="review-card featured" id="review-1">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "Cái giá treo tai nghe này xịn hơn mình nghĩ nhiều! Chắc chắn, không rung lắc, kẹp vào bàn là ok ngay.
+            Góc máy của mình giờ trông gọn hơn hẳn. Mua lần 2 rồi vẫn chưa thất vọng lần nào!"
+          </p>
+          <div class="review-author">
+            <div class="review-avatar" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">MH</div>
+            <div class="review-author-info">
+              <strong>Minh Hoàng</strong>
+              <span>Hà Nội</span>
+            </div>
+            <div class="review-platform">Lazada ✓</div>
+          </div>
+        </div>
+
+        <div class="review-card" id="review-2">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "Sản phẩm đẹp hơn ảnh, chất liệu rất tốt. Giao hàng nhanh, đóng gói cẩn thận.
+            Mình đã mua thêm cho cả phòng làm việc của công ty!"
+          </p>
+          <div class="review-author">
+            <div class="review-avatar" style="background: linear-gradient(135deg, #fa709a, #fee140);">TL</div>
+            <div class="review-author-info">
+              <strong>Thu Linh</strong>
+              <span>TP.HCM</span>
+            </div>
+            <div class="review-platform">Lazada ✓</div>
+          </div>
+        </div>
+
+        <div class="review-card" id="review-3">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "Mình là gamer, cần giá treo tai nghe để không bị vướng dây. GridSetup làm mình hài lòng hoàn toàn –
+            kẹp chắc, không sợ rơi, thiết kế cũng hợp với setup đen của mình."
+          </p>
+          <div class="review-author">
+            <div class="review-avatar" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">NK</div>
+            <div class="review-author-info">
+              <strong>Nguyên Khôi</strong>
+              <span>Đà Nẵng</span>
+            </div>
+            <div class="review-platform">Lazada ✓</div>
+          </div>
+        </div>
+
+        <div class="review-card" id="review-4">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "Giá 30k mà chất lượng vượt kỳ vọng. Lắp cực nhanh, không cần dụng cụ. Shop giao nhanh,
+            có vấn đề gì hỏi seller cũng support nhiệt tình. 5 sao không đắn đo!"
+          </p>
+          <div class="review-author">
+            <div class="review-avatar" style="background: linear-gradient(135deg, #f093fb, #f5576c);">HA</div>
+            <div class="review-author-info">
+              <strong>Hải Anh</strong>
+              <span>Bình Dương • Content Creator</span>
+            </div>
+            <div class="review-platform">Lazada ✓</div>
+          </div>
+        </div>
+
+        <div class="review-card" id="review-5">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "Mình order nhiều đồ phụ kiện trên mạng nhưng GridSetup là nơi mình thực sự hài lòng nhất.
+            Sản phẩm đúng mô tả, chất lượng tốt, sẽ ủng hộ lâu dài!"
+          </p>
+          <div class="review-author">
+            <div class="review-avatar" style="background: linear-gradient(135deg, #667eea, #764ba2);">VT</div>
+            <div class="review-author-info">
+              <strong>Việt Thắng</strong>
+              <span>Cần Thơ • Freelancer</span>
+            </div>
+            <div class="review-platform">Lazada ✓</div>
+          </div>
+        </div>
+
+        <div class="review-card" id="review-6">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "Đặt về làm quà tặng cho bạn thân vì bạn mình cũng dùng tai nghe nhiều.
+            Bạn mình thích lắm, bảo sẽ tự mua thêm 1 cái nữa. Sản phẩm ý nghĩa mà giá tốt!"
+          </p>
+          <div class="review-author">
+            <div class="review-avatar" style="background: linear-gradient(135deg, #ffecd2, #fcb69f);">LN</div>
+            <div class="review-author-info">
+              <strong>Lan Nhi</strong>
+              <span>Hải Phòng • Office Worker</span>
+            </div>
+            <div class="review-platform">Lazada ✓</div>
+          </div>
+        </div>
+
+      </div><!-- /reviews-grid -->
+
+      <div class="reviews-summary">
+        <div class="rating-big">4.9</div>
+        <div class="rating-stars-big">★★★★★</div>
+        <div class="rating-count">Dựa trên 500+ đánh giá từ Lazada</div>
+        <a href="https://www.lazada.vn/grid-setup/?q=All-Products&from=wangpu&langFlag=vi&pageTypeId=2" target="_blank"
+          rel="noopener" class="btn btn-primary btn-lg" id="reviews-lazada-btn">
+          🛒 Mua Ngay – Tham Gia Cùng Hàng Trăm Khách Hàng Hài Lòng
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FINAL CTA SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="final-cta-section" id="final-cta">
+    <div class="final-cta-bg"></div>
+    <div class="final-cta-inner">
+      <img src="img/Logo.jpg" alt="GridSetup" class="final-cta-logo" />
+      <h2>Sẵn Sàng Nâng Tầm <span class="gradient-text">Góc Máy</span> Của Bạn?</h2>
+      <p>Hàng ngàn khách hàng đã chọn GridSetup – Đến lượt bạn!</p>
+      <a href="https://www.lazada.vn/grid-setup/?q=All-Products&from=wangpu&langFlag=vi&pageTypeId=2" target="_blank"
+        rel="noopener" class="btn btn-primary btn-xl" id="final-cta-btn">
+        🛒 Mua Ngay Tại Lazada
+      </a>
+      <p class="final-cta-note">⚡ Miễn phí vận chuyển • ✅ Hàng chính hãng • 🔄 Đổi trả dễ dàng</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer" id="contact">
+    <div class="footer-top">
+      <div class="footer-container">
+
+        <!-- Brand column -->
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <img src="img/Logo.jpg" alt="GridSetup Logo" class="footer-logo-img" />
+            <span>Grid<span class="logo-accent">Setup</span></span>
+          </div>
+          <p class="footer-tagline">
+            Phụ kiện máy tính chất lượng cao với thiết kế minimalist –
+            Giải phóng mặt bàn, nâng tầm trải nghiệm.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" id="footer-facebook" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a href="#" class="social-link" id="footer-tiktok" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V9.09a8.16 8.16 0 0 0 4.77 1.52V7.16a4.85 4.85 0 0 1-1.01-.47z" />
+              </svg>
+            </a>
+            <a href="#" class="social-link" id="footer-instagram" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="https://www.lazada.vn/grid-setup/" target="_blank" rel="noopener" class="social-link"
+              id="footer-lazada" aria-label="Lazada">
+              🛒
+            </a>
+          </div>
+        </div>
+
+        <!-- Links column -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Liên Hệ</h4>
+          <ul class="footer-links">
+            <li>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.08 6.08l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <a href="tel:+84xxxxxxxxx">0xxx xxx xxx</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <a href="mailto:gridsetup@gmail.com">gridsetup@gmail.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span>Việt Nam</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Channels column -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Kênh Mua Hàng</h4>
+          <ul class="footer-links">
+            <li>
+              <span>🛒</span>
+              <a href="https://www.lazada.vn/grid-setup/?q=All-Products&from=wangpu&langFlag=vi&pageTypeId=2"
+                target="_blank" rel="noopener" id="footer-lazada-link">Lazada – Grid Setup</a>
+            </li>
+            <li>
+              <span>📘</span>
+              <a href="#" id="footer-fb-shop">Facebook Shop</a>
+            </li>
+            <li>
+              <span>🎵</span>
+              <a href="#" id="footer-tiktok-shop">TikTok Shop</a>
+            </li>
+            <li>
+              <span>📸</span>
+              <a href="#" id="footer-instagram-shop">Instagram</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Policy column -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Chính Sách</h4>
+          <ul class="footer-links">
+            <li><a href="#" id="footer-return-policy">Chính Sách Đổi Trả</a></li>
+            <li><a href="#" id="footer-ship-policy">Chính Sách Vận Chuyển</a></li>
+            <li><a href="#" id="footer-privacy-policy">Chính Sách Bảo Mật</a></li>
+            <li><a href="#" id="footer-warranty-policy">Chính Sách Bảo Hành</a></li>
+            <li><a href="#" id="footer-terms">Điều Khoản Sử Dụng</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-container">
+        <p>© 2025 GridSetup. Tất cả quyền được bảo lưu.</p>
+        <p>Thiết kế với ❤️ bởi GridSetup Team</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING BUY BUTTON -->
+  <div class="floating-buy" id="floating-buy">
+    <a href="https://www.lazada.vn/grid-setup/?q=All-Products&from=wangpu&langFlag=vi&pageTypeId=2" target="_blank"
+      rel="noopener" class="floating-buy-btn" id="float-buy-btn">
+      <span class="floating-icon">🛒</span>
+      <span class="floating-text">Mua Ngay</span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
