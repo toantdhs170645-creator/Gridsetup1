@@ -106,7 +106,7 @@ initReveal();
 
 // ── SMOOTH SCROLL FOR NAV LINKS ───────────────────
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
+  anchor.addEventListener('click', function (e) {
     const targetId = this.getAttribute('href');
     if (targetId === '#') return;
     const target = document.querySelector(targetId);
@@ -120,29 +120,47 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ── ACTIVE NAV LINK HIGHLIGHT ─────────────────────
-const sections = document.querySelectorAll('section[id], div[id="contact"]');
+const navSections = document.querySelectorAll('section[id], footer[id]');
 const navLinksAll = document.querySelectorAll('.nav-links a');
 
-const sectionObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      navLinksAll.forEach(link => {
-        link.style.color = '';
-        link.style.background = '';
-        if (link.getAttribute('href') === `#${entry.target.id}`) {
-          link.style.color = '#fff';
-          link.style.background = 'rgba(59,130,246,0.12)';
-        }
-      });
+function updateActiveNav() {
+  const scrollY = window.scrollY;
+  const navHeight = 80;
+  const windowHeight = window.innerHeight;
+  const docHeight = document.documentElement.scrollHeight;
+  let currentId = '';
+
+  // Special case: if near bottom of page, activate last nav section (contact/footer)
+  const isAtBottom = scrollY + windowHeight >= docHeight - 60;
+  if (isAtBottom) {
+    const lastSection = navSections[navSections.length - 1];
+    if (lastSection) currentId = lastSection.id;
+  } else {
+    navSections.forEach(section => {
+      const top = section.offsetTop - navHeight - 60;
+      const bottom = top + section.offsetHeight;
+      if (scrollY >= top && scrollY < bottom) {
+        currentId = section.id;
+      }
+    });
+  }
+
+  navLinksAll.forEach(link => {
+    link.style.color = '';
+    link.style.background = '';
+    if (currentId && link.getAttribute('href') === `#${currentId}`) {
+      link.style.color = '#fff';
+      link.style.background = 'rgba(59,130,246,0.12)';
     }
   });
-}, { threshold: 0.4 });
+}
 
-sections.forEach(section => sectionObserver.observe(section));
+window.addEventListener('scroll', updateActiveNav, { passive: true });
+updateActiveNav();
 
 // ── PRODUCT IMAGE LAZY LOAD FALLBACK ─────────────
 document.querySelectorAll('img').forEach(img => {
-  img.addEventListener('error', function() {
+  img.addEventListener('error', function () {
     // If image fails, show a placeholder gradient
     this.style.background = 'linear-gradient(135deg, #0d1526, #111827)';
     this.style.opacity = '0.5';
@@ -151,7 +169,7 @@ document.querySelectorAll('img').forEach(img => {
 
 // ── LAZADA BUTTON CLICK TRACKING (UX feedback) ───
 document.querySelectorAll('a[href*="lazada"]').forEach(btn => {
-  btn.addEventListener('click', function() {
+  btn.addEventListener('click', function () {
     // Visual ripple effect
     const ripple = document.createElement('span');
     ripple.style.cssText = `
