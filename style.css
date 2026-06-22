@@ -1558,6 +1558,27 @@ ul {
   .nav-container {
     padding: 0.85rem 1.25rem;
   }
+  /* Fix Flash Sale button overflow on mobile - override inline styles */
+  .hero-actions {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .hero-actions .btn {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 1.1rem !important;
+    padding: 18px 20px !important;
+    white-space: normal !important;
+    text-align: center;
+    word-break: break-word;
+    box-sizing: border-box;
+  }
+
+  .hero-actions .btn .btn-arrow {
+    font-size: 1.4rem !important;
+    flex-shrink: 0;
+  }
 }
 
 @media (max-width: 480px) {
