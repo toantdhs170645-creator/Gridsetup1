@@ -1,0 +1,6 @@
+@GridSetup_HostAddress = http://localhost:5182
+
+GET {{GridSetup_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
